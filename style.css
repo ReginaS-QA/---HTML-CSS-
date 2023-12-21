@@ -1,0 +1,103 @@
+body {
+   font-family: Roboto, sans-serif;
+   /* картинка фона */
+   background-image: url(./my_fon.JPG);
+   /* настройки отображения картинки */
+   background-repeat: no-repeat;
+   background-size: cover;
+   overflow: hidden;
+ }
+
+.container {
+   width: 100%;
+   padding: 5.56vw;
+}
+
+.main {
+   position: relative;
+   /* размеры блока, который формирует размер страницы отображения на экране */
+   /* ширина блока равна ширине экрана */
+   width: 100vw;
+   /* высота блока равна минимум высоте экрана */
+   min-height: 100vh;
+   /* а также высота может быть больше высоты экрана если требуется вместить содержимое страницы */
+   height: 100%;   
+}
+
+/* общий блок, внутри которого находится блоки с текстом */
+.data {
+   position: relative;
+   display: flex;
+   align-items: center;
+   column-gap: 15.17vw;
+}
+
+.photo {
+   border-radius: 100px;
+   /* Радиус скругления */
+   border: 3px solid transparent;
+   /* Параметры рамки */
+   box-shadow: 0 4px 15px 0px rgba(0, 0, 0, 0.52);
+   object-fit: cover;
+ }
+
+.name {
+   /* размер шрифта имени */
+   font-size: 3.333vw;
+   font-weight: 500;
+   /*  отступы между строчками с именем */
+   padding-bottom: 0.1em;
+}
+
+.name div {
+   margin-bottom: 0.3em;
+   /* текст выводится с заглавной каждое слово */
+   text-transform: capitalize;
+}
+
+.list {
+   /* текст выводится заглавными буквами */
+   text-transform: none;
+   /* размер шрифта */
+   font-size: 2.25vw;
+   /* отступы между строчками */
+   margin: 1.39em 0px;
+}
+
+/* цвет наименований */
+.list p {
+   color: #000000;
+}
+
+.links {
+   display: flex;
+   column-gap: 2.78vw;
+}
+
+/* Ссылки */
+a {
+   display: inline-block;
+   /* текст заглавными буквами */
+   text-transform: none;
+   /* внешние отступы от соседних элементов */
+   text-decoration: none;
+   margin-top: 1.5vw;
+   /* отступы со всех сторон от текста до рамки */
+   padding: 2.08vw;
+   font-size: 1.5vw;
+   /* цвет шрифта */
+   color: #000000;
+   /* рамка ссылки: толщина линии, вид рамки, цвет */
+   border: 3px solid transparent;
+   /* Радиус скругления */
+   border-radius: 100px;
+   object-fit: cover;
+   /* цвет фона */
+   background-color: steelblue;
+}
+
+/* Изменение цвета при наведении на ссылку */
+a:hover {
+   /* Параметры рамки */
+   box-shadow: 0 4px 15px 0px rgba(0, 0, 0, 0.52);
+}
