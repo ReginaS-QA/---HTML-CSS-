@@ -69,20 +69,20 @@ body {
    color: #000000;
 }
 
-.links {
+.btn {
    display: flex;
    column-gap: 2.78vw;
 }
 
 /* Ссылки */
-a {
+.btn {
    display: inline-block;
-   /* текст заглавными буквами */
+   /* текст обычными буквами */
    text-transform: none;
    /* внешние отступы от соседних элементов */
    text-decoration: none;
    margin-top: 1.5vw;
-   /* отступы со всех сторон от текста до рамки */
+      /* отступы со всех сторон от текста до рамки */
    padding: 2.08vw;
    font-size: 1.5vw;
    /* цвет шрифта */
@@ -97,7 +97,56 @@ a {
 }
 
 /* Изменение цвета при наведении на ссылку */
-a:hover {
+.btn:hover {
    /* Параметры рамки */
    box-shadow: 0 4px 15px 0px rgba(0, 0, 0, 0.52);
+}
+
+.bttn:hover {
+   /* Параметры рамки */
+   box-shadow: 0 4px 15px 0px rgba(0, 0, 0, 0.52);
+}
+
+.bttn {
+   display: inline-block;
+   /* текст заглавными буквами */
+   text-transform: none;
+   /* внешние отступы от соседних элементов */
+   text-decoration: none;
+   margin-top: 1.5vw;
+   margin-left: 2.5vw;
+   /* отступы со всех сторон от текста до рамки */
+   padding: 2.08vw;
+   font-size: 1.5vw;
+   /* цвет шрифта */
+   color: #000000;
+   /* рамка ссылки: толщина линии, вид рамки, цвет */
+   border: 3px solid transparent;
+   /* Радиус скругления */
+   border-radius: 100px;
+   object-fit: cover;
+   /* цвет фона */
+   background-color: yellow;
+}
+
+.bttn_pressed {
+   display: inline-block;
+   /* текст заглавными буквами */
+   text-transform: none;
+   /* внешние отступы от соседних элементов */
+   text-decoration: none;
+   margin-top: 1.5vw;
+   margin-left: 2.5vw;
+      /* отступы со всех сторон от текста до рамки */
+   padding: 2.08vw;
+   font-size: 1.5vw;
+   /* цвет шрифта */
+   color: #000000;
+   /* рамка ссылки: толщина линии, вид рамки, цвет */
+   border: 3px solid transparent;
+   /* Радиус скругления */
+   border-radius: 100px;
+   object-fit: cover;
+   /* цвет фона */
+   background-color: magenta;
 }
